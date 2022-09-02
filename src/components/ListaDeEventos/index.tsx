@@ -7,7 +7,8 @@ import style from './ListaDeEventos.module.scss';
 const ListaDeEventos: React.FC = () => {
   const eventos = useListaDeEventos();
 
-  return (<section>
+  return (
+  <section className={style.listaEventos}>
     <Filtro />
     <div className={style.Scroll}>
       {eventos.map(evento => (

@@ -12,17 +12,16 @@ function App() {
     <RecoilRoot>
       <DebugObserver />
       <Suspense fallback="Está carregando">
-        <div className={style.App}>
-          <div className={style.Coluna}>
+        <div className={style.app}>
+          <div className={style.coluna}>
             <Card>
               <Formulario />
             </Card>
-            <hr />
             <Card>
               <ListaDeEventos />
             </Card>
           </div>
-          <div className={style.Coluna}>
+          <div className={style.coluna}>
             <Calendario />
           </div>
         </div>
